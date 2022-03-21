@@ -14,13 +14,10 @@ import FlashMessage, { showMessage, hideMessage } from "react-native-flash-messa
 const { EmulatorDetectionModule } = NativeModules;
 
 
-function FirstPage() {
+function FirstPage({navigation}) {
 
     const [userName, setUserName] = useState('');
     useEffect(() => {
-        // clearUserData('userData').then(() => {
-        //     console.log('Storage Cleaned');
-        // })
         emultorFlag();
     }, []);
 
