@@ -4,8 +4,6 @@ import { View, Text, TextInput, StyleSheet } from 'react-native'
 import TextInputWithLable from '../Components/TextInputWithLabel'
 import Button_ from '../Components/Button_'
 import { styles } from '../Style/globalStyle'
-import { setUserData } from '../utils'
-import { clearUserData } from '../utils'
 import action from '../Redux/actions/index'
 import { NativeModules } from 'react-native';
 import FlashMessage, { showMessage, hideMessage } from "react-native-flash-message";
@@ -14,13 +12,10 @@ import FlashMessage, { showMessage, hideMessage } from "react-native-flash-messa
 const { EmulatorDetectionModule } = NativeModules;
 
 
-function FirstPage() {
+function FirstPage({ navigation }) {
 
     const [userName, setUserName] = useState('');
     useEffect(() => {
-        // clearUserData('userData').then(() => {
-        //     console.log('Storage Cleaned');
-        // })
         emultorFlag();
     }, []);
 
@@ -54,12 +49,6 @@ function FirstPage() {
             } catch (error) {
                 console.log("error raised : " + error)
             }
-
-            // setUserData(userName).then(() => {
-            //     console.log('data Saved');
-            //     props.navigation.navigate('SecondPage');
-            //     // props.navigation.navigate('SecondPage',{});
-            // });
         }
 
     }
