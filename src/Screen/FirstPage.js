@@ -11,7 +11,6 @@ import FlashMessage, { showMessage, hideMessage } from "react-native-flash-messa
 
 const { EmulatorDetectionModule } = NativeModules;
 
-
 function FirstPage({ navigation }) {
 
     const [userName, setUserName] = useState('');

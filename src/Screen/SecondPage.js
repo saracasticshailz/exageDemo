@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { View, Text } from 'react-native'
 import { styles } from '../Style/globalStyle'
-import { getUserData } from '../utils';
 import Button_ from '../Components/Button_';
 import { useSelector } from 'react-redux';
 import SwipeButton from 'rn-swipe-button';
