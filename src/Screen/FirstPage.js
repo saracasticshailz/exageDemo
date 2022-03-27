@@ -11,7 +11,7 @@ import FlashMessage, { showMessage, hideMessage } from "react-native-flash-messa
 
 const { EmulatorDetectionModule } = NativeModules;
 
-function FirstPage({ navigation }) {
+function FirstPage(props: props): React.Node  {
 
     const [userName, setUserName] = useState('');
     useEffect(() => {
@@ -43,7 +43,7 @@ function FirstPage({ navigation }) {
                     userName
                 })
                 console.log("res==>>>>>", res);
-                navigation.navigate('SecondPage');
+               props. navigation.navigate('SecondPage');
 
             } catch (error) {
                 console.log("error raised : " + error)

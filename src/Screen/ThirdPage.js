@@ -1,9 +1,10 @@
+//@flow
 import React from 'react'
 import { View, Text } from 'react-native'
 import { styles } from '../Style/globalStyle'
 import { useSelector } from 'react-redux';
 
-export default function ThirdPage() {
+export default function ThirdPage(props: props): React.Node  {
     const userData = useSelector((state) => state.userData);
 
 

@@ -1,3 +1,4 @@
+//@flow
 import React, { useState, useEffect } from 'react'
 import { View, Text } from 'react-native'
 import { styles } from '../Style/globalStyle'
@@ -6,17 +7,12 @@ import { useSelector } from 'react-redux';
 import SwipeButton from 'rn-swipe-button';
 
 
-export default function SecondPage(props) {
+export default function SecondPage(props: props): React.Node {
 
     const [userName, setUserName] = useState('');
     const userData = useSelector((state) => state.userData);
-    // const thumbIcon = require('../../assets/time.png');
-
 
     useEffect(() => {
-        // getUserData().then((data) => {
-        //     setUserName(data);
-        // })
         console.log('userData : ' + JSON.stringify(userData));
 
         setUserName(userData.userName);
@@ -55,11 +51,10 @@ export default function SecondPage(props) {
                     props.navigation.navigate('ThirdPage');
 
                 }}
-                //After the completion of swipe (Optional)
-                railFillBackgroundColor="#0096FF" //(Optional)
-                railFillBorderColor="#88d0e6" //(Optional)
-                thumbIconBackgroundColor="#88d0e6" //(Optional)
-                railBackgroundColor="#000000" //(Optional)
+                railFillBackgroundColor="#0096FF" 
+                railFillBorderColor="#88d0e6" 
+                thumbIconBackgroundColor="#88d0e6" 
+                railBackgroundColor="#000000" 
 
             />
 
