@@ -15,7 +15,8 @@ export const styles = StyleSheet.create({
         color: 'white',
         paddingHorizontal: 16,
         marginLeft: 20,
-        marginRight: 20
+        marginRight: 20,
+        fontFamily: 'Montserrat'
     },
     inputView: {
         flexDirection: 'row',
@@ -26,7 +27,8 @@ export const styles = StyleSheet.create({
         borderWidth: 5,
         borderRadius: 10,
         marginLeft: 15,
-        marginRight: 15
+        marginRight: 15,
+         fontFamily: 'Montserrat'
 
     },
     btnStyle: {
@@ -41,11 +43,13 @@ export const styles = StyleSheet.create({
         fontSize: 16,
         textTransform: 'uppercase',
         fontWeight: 'bold',
-        color: 'white'
+        color: 'white',
+         fontFamily: 'Montserrat'
     },
     horizontalView: {
         flexDirection: 'row',
         flex: 1,
         justifyContent: 'flex-end'
     },
+    secondScreenHeader:{ color: '#FFFF00', justifyContent: 'center', alignSelf: 'center', fontFamily: 'Montserrat' }
 })

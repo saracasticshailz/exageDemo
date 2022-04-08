@@ -26,13 +26,16 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         borderRadius: 10,
         paddingHorizontal: 16,
-        marginTop: 10
+        marginTop: 10,
+         fontFamily: 'Montserrat'
     },
     textStyle: {
         fontSize: 16,
         textTransform: 'uppercase',
         fontWeight: 'bold',
-        //  color: 'white'
+        fontFamily: 'Montserrat'
+        //  color: 'white',
+        // fontFamily: 'Montserrat'
     }
 });
 

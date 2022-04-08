@@ -5,6 +5,7 @@ import { styles } from '../Style/globalStyle'
 import Button_ from '../Components/Button_';
 import { useSelector } from 'react-redux';
 import SwipeButton from 'rn-swipe-button';
+import diamond from '../assets/diamond.png'
 
 
 export default function SecondPage(props: props): React.Node {
@@ -14,15 +15,14 @@ export default function SecondPage(props: props): React.Node {
 
     useEffect(() => {
         console.log('userData : ' + JSON.stringify(userData));
-
         setUserName(userData.userName);
     });
     return (
         <View style={styles.containerMain}>
             <View style={styles.horizontalView}>
-                <Text style={{ color: 'white' }}>{userName}</Text>
+                <Text style={{ color: 'white',fontFamily:'Montserrat' }}>{userName}</Text>
             </View>
-            <Text style={{ color: '#00A36C', justifyContent: 'center', alignSelf: 'center' }}>4 variations of button</Text>
+            <Text style={styles.secondScreenHeader}>4 variations of button</Text>
             <Button_
                 btnTextColor={'#ADD8E6'}
                 text={'Press Me'} />
@@ -41,20 +41,22 @@ export default function SecondPage(props: props): React.Node {
             <SwipeButton
                 disabled={false}
                 swipeSuccessThreshold={70}
-                height={45}
+                height={48}
                 width={330}
                 title="Slide me to continue"
                 titleColor='#FFFFFF'
-                style={{ borderRadius: 10 }}
-                // thumbIconImageSource={thumbIcon}
-                onSwipeSuccess={() => {
+                containerStyles={{borderRadius: 10}}
+                onSwipeSuccess={() => { 
                     props.navigation.navigate('ThirdPage');
-
                 }}
                 railFillBackgroundColor="#0096FF" 
                 railFillBorderColor="#88d0e6" 
-                thumbIconBackgroundColor="#88d0e6" 
+                thumbIconBackgroundColor="#0096FF" 
                 railBackgroundColor="#000000" 
+                thumbIconImageSource={diamond}
+                railStyles={{borderRadius: 10}}
+            thumbIconStyles={{borderRadius: 5}}
+
 
             />
 

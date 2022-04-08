@@ -15,6 +15,7 @@
 		41E9D9DDB8B69E901CD98FFA /* libPods-exageDemom-exageDemomTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DEB98D90D2396E1D32449F34 /* libPods-exageDemom-exageDemomTests.a */; };
 		52F15109325AF1034F7FCED4 /* libPods-exageDemom.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E33EE00D485B099F390D5CA2 /* libPods-exageDemom.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		8215BF4317E64B379D5BD341 /* Montserrat.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 702C0C45110946ACB2689489 /* Montserrat.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		ED1F9C1AB133D32F874B5098 /* Pods-exageDemom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-exageDemom.debug.xcconfig"; path = "Target Support Files/Pods-exageDemom/Pods-exageDemom.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		F6032579D6C9E3A2F427D946 /* Pods-exageDemom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-exageDemom.release.xcconfig"; path = "Target Support Files/Pods-exageDemom/Pods-exageDemom.release.xcconfig"; sourceTree = "<group>"; };
+		702C0C45110946ACB2689489 /* Montserrat.ttf */ = {isa = PBXFileReference; name = "Montserrat.ttf"; path = "../src/assets/fonts/Montserrat.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				1943156C012D0906280E025F /* Pods */,
+				0A1BBF00EA0F4D5A9924B349 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -150,6 +153,15 @@
 			);
 			name = Products;
 			sourceTree = "<group>";
+		};
+		0A1BBF00EA0F4D5A9924B349 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				702C0C45110946ACB2689489 /* Montserrat.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -247,6 +259,7 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				8215BF4317E64B379D5BD341 /* Montserrat.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

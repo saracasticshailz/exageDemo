@@ -15,7 +15,8 @@ const TextInputWithLable = ({
             <Text style={{
                 fontSize: 16,
                 marginBottom: 8,
-                fontWeight: 'bold'
+                fontWeight: 'bold',
+                fontFamily: 'Montserrat'
 
             }}>{label}</Text>
             <TextInput
